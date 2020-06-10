@@ -10,7 +10,7 @@ public abstract class Employer {
     private int age;
     private final double power;
     private double salary;
-    private static int increaseCoefficient;
+    public final static int INCREASE_COEFFICENT = 2;
 
 
     public void printSalary() {
@@ -18,7 +18,7 @@ public abstract class Employer {
     }
 
     public void printPremium() {
-        System.out.println(salary * increaseCoefficient);
+        System.out.println(salary * INCREASE_COEFFICENT);
     }
 
 }
